@@ -1,0 +1,23 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".yandex.ru"
+  [url-cookie "yandexuid" "7986283821568896558" "Thu, 31-Dec-2037 20:59:59 GMT" "/" ".yandex.ru" nil])
+ (".ya.ru"
+  [url-cookie "yandexuid" "8222288101568896549" "Sun, 16-Sep-2029 12:35:49 GMT" "/" ".ya.ru" nil]
+  [url-cookie "yp" "1571488550.ygu.1" "Sun, 16-Sep-2029 12:35:50 GMT" "/" ".ya.ru" nil]
+  [url-cookie "mda" "0" "Fri, 17-Jan-2020 12:35:50 GMT" "/" ".ya.ru" nil]
+  [url-cookie "yandex_gid" "959" "Sat, 19-Oct-2019 12:35:50 GMT" "/" ".ya.ru" nil]))
+)
+(setq url-cookie-secure-storage
+ '((".yandex.ru"
+  [url-cookie "i" "9gEq5gzCk70A81hYU9V6gdFcrVleauKJkFvyJeOHTwcZtVAAndDGK1jM1yuqviWIob2qGSsCgeOPu0xZx/u422vyMd0=" "Sun, 16-Sep-2029 12:35:58 GMT" "/" ".yandex.ru" t])
+ (".ya.ru"
+  [url-cookie "i" "f3pfnOFGv6Tr5ZNM9fKHuPj1P0dm9m0UfZz8u5sTilwCoi8/VTJRbnP+571zdelA1xQamgJ2X3J6piW108k0MtbgXMQ=" "Sun, 16-Sep-2029 12:35:50 GMT" "/" ".ya.ru" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
