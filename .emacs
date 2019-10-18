@@ -45,6 +45,8 @@
   )
               auto-mode-alist))
 
+(defalias 'perl-mode 'cperl-mode)
+
 (add-to-list 'custom-theme-load-path "/home/tsund/.emacs.d/themes")
 
 (load-theme 'spacemacs-dark t)
