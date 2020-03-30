@@ -5,9 +5,6 @@
 	     '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 
-(let ((default-directory  "~/.emacs.d/custom_packages/"))
-  (normal-top-level-add-subdirs-to-load-path))
-
 (global-auto-complete-mode t)
 (cua-mode t)
 (ido-mode t)
