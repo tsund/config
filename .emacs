@@ -5,9 +5,6 @@
 	     '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 
-(let ((default-directory  "~/.emacs.d/custom_packages/"))
-  (normal-top-level-add-subdirs-to-load-path))
-
 (cua-mode t)
 (ido-mode t)
 (dumb-jump-mode t)
@@ -60,13 +57,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "43b219a31db8fddfdc8fdbfdbd97e3d64c09c1c9fdd5dff83f3ffc2ddb8f0ba0" "0598c6a29e13e7112cfbc2f523e31927ab7dce56ebb2016b567e1eff6dc1fd4f" default)))
+    (quote
+     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "43b219a31db8fddfdc8fdbfdbd97e3d64c09c1c9fdd5dff83f3ffc2ddb8f0ba0" "0598c6a29e13e7112cfbc2f523e31927ab7dce56ebb2016b567e1eff6dc1fd4f" default)))
  '(electric-indent-mode nil)
  '(electric-layout-mode t)
  '(package-selected-packages
-   (quote
-    (docker-tramp erlang vue-mode yaml-mode multi-web-mode dockerfile-mode php-mode dumb-jump js2-mode web-mode magit neotree spacemacs-theme solarized-theme))))
+    (quote
+     (docker-tramp erlang vue-mode yaml-mode multi-web-mode dockerfile-mode php-mode dumb-jump js2-mode web-mode magit neotree spacemacs-theme solarized-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -83,3 +80,7 @@
   )
 
 (global-set-key (kbd "<C-tab>") 'insert-tab)
+
+(load "~/.emacs.d/find-file-in-project/find-file-in-project")
+(require 'find-file-in-project)
+(global-set-key (kbd "C-c p") 'find-file-in-project)
