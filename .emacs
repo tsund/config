@@ -5,11 +5,14 @@
 	     '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 
+(global-auto-complete-mode t)
 (cua-mode t)
 (ido-mode t)
 (dumb-jump-mode t)
 (show-paren-mode t)
 (setq show-paren-style 'expression)
+
+(setq neo-window-fixed-size nil)
 
 (setq create-lockfiles nil)
 (setq make-backup-files         nil); Don't want any backup files
@@ -43,6 +46,7 @@
   ("\\.vue$"          .       web-mode)
   ("\\.html\\.ep$"    .       web-mode)
   ("\\.php$"          .       php-mode)
+  ("\\.kt$"          .       kotlin-mode)
   )
               auto-mode-alist))
 
@@ -63,7 +67,7 @@
  '(electric-layout-mode t)
  '(package-selected-packages
     (quote
-     (docker-tramp erlang vue-mode yaml-mode multi-web-mode dockerfile-mode php-mode dumb-jump js2-mode web-mode magit neotree spacemacs-theme solarized-theme))))
+     (swift-mode typescript-mode auto-complete kotlin-mode lua-mode docker-tramp erlang vue-mode yaml-mode multi-web-mode dockerfile-mode php-mode dumb-jump js2-mode web-mode magit neotree spacemacs-theme solarized-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
